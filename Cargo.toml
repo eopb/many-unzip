@@ -1,0 +1,39 @@
+[package]
+name = "many-unzip"
+authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+description = """
+`multiunzip` from itertools but with support for larger than 12-tuples.
+"""
+keywords = ["unzip", "iterator", "itertools", "zip"]
+documentation = "https://docs.rs/many-unzip/"
+repository = "https://github.com/eopb/many-unzip"
+version = "0.0.1"
+edition = "2015"
+exclude = [".github"]
+
+[features]
+# By default we support up to 24-tuples
+default = ["24_tuple"]
+
+# Support up to 3-tuples
+3_tuple = []
+# Support up to 6-tuples
+6_tuple = ["3_tuple"]
+# Support up to 12-tuples
+12_tuple = ["6_tuple"]
+# Support up to 24-tuples
+24_tuple = ["12_tuple"]
+# Support up to 48-tuples
+48_tuple = ["24_tuple"]
+# Support up to 96-tuples
+96_tuple = ["48_tuple"]
+# Support up to 192-tuples
+192_tuple = ["96_tuple"]
+
+[dependencies]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--generate-link-to-definition", "--cfg", "docsrs"]
