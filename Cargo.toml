@@ -17,7 +17,7 @@ exclude = [".github"]
 rust-version = "1.54"
 
 [features]
-# By default we support up to 24-tuples
+# By default we support up to 24-tuples which is double the number supported by itertools
 default = ["24_tuple"]
 
 # Support up to 3-tuples

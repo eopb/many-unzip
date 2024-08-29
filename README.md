@@ -11,7 +11,9 @@
 
 Converts an iterator of tuples into a tuple of containers.
 
-`many_unzip()` consumes an entire iterator of n-ary tuples, producing `n` collections, one for each column.
+`many_unzip()` consumes an entire iterator of k-tuples tuples, producing `k` collections, one for each column.
+With default features, `many_unzip` supports up to 24-tuples.
+Larger numbers can be enabled with feature flags, up to 192-tuples with the `192_tuple` feature.
 
 This function is, in some sense, the opposite of [`multizip`](https://docs.rs/itertools/latest/itertools/fn.multizip.html).
 
