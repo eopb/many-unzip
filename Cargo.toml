@@ -10,8 +10,11 @@ keywords = ["unzip", "iterator", "itertools", "zip"]
 documentation = "https://docs.rs/many-unzip/"
 repository = "https://github.com/eopb/many-unzip"
 version = "0.0.1"
-edition = "2015"
+edition = "2018"
 exclude = [".github"]
+
+# Feel free to bump this if your change requires a newer version
+rust-version = "1.54"
 
 [features]
 # By default we support up to 24-tuples
