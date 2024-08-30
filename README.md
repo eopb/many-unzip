@@ -5,7 +5,7 @@
 [![Latest Docs](https://docs.rs/many-unzip/badge.svg)](https://docs.rs/many-unzip/)
 [![downloads-badge](https://img.shields.io/crates/d/many-unzip.svg)](https://crates.io/crates/many-unzip)
 
-[API docs](https://docs.rs/redact/)
+[API docs](https://docs.rs/many-unzip/)
 
 [`multiunzip` from itertools](https://docs.rs/itertools/latest/itertools/fn.multiunzip.html) but with support for larger than 12-tuples.
 
