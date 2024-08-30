@@ -9,7 +9,7 @@ description = """
 keywords = ["unzip", "iterator", "itertools", "zip"]
 documentation = "https://docs.rs/many-unzip/"
 repository = "https://github.com/eopb/many-unzip"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2018"
 exclude = [".github"]
 
