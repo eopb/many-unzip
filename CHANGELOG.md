@@ -8,9 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.2](https://github.com/eopb/many-unzip/compare/v0.1.1...v0.1.2) - 2025-03-05
 
-### Other
+### Docs
 
-- Merge pull request #12 from mercxry/rust-1-85-tuple-extend-docs
+- Mention Rust 1.85 tuple Extend trait
 
 ## [0.1.1](https://github.com/eopb/many-unzip/compare/v0.1.0...v0.1.1) - 2024-08-30
 
