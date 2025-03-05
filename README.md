@@ -7,15 +7,14 @@
 
 [API docs](https://docs.rs/many-unzip/)
 
-[`multiunzip` from itertools](https://docs.rs/itertools/latest/itertools/fn.multiunzip.html) but with support for larger than 12-tuples.
+Like [`Iterator::unzip`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.unzip) with the [`Extend` trait](https://doc.rust-lang.org/std/primitive.tuple.html#impl-Extend%3C(A,)%3E-for-(EA,)) ([since Rust 1.85](https://blog.rust-lang.org/2025/02/20/Rust-1.85.0.html#fromiterator-and-extend-for-tuples)) or [`itertools::multiunzip`](https://docs.rs/itertools/latest/itertools/fn.multiunzip.html), but without the 12 tuples limitation (up to 192 tuples).
 
-Converts an iterator of tuples into a tuple of containers.
+Converts an iterator of tuples into a tuple of containers, `many_unzip()` consumes an entire iterator of k-tuples tuples, producing `k` collections, one for each column.
 
-`many_unzip()` consumes an entire iterator of k-tuples tuples, producing `k` collections, one for each column.
 With default features, `many_unzip` supports up to 24-tuples.
 Larger numbers can be enabled with feature flags, up to 192-tuples with the `192_tuple` feature.
 
-This function is, in some sense, the opposite of [`multizip`](https://docs.rs/itertools/latest/itertools/fn.multizip.html).
+This function is, in some sense, the opposite of [`itertools::multizip`](https://docs.rs/itertools/latest/itertools/fn.multizip.html).
 
 ```rust
 # use many_unzip::many_unzip;

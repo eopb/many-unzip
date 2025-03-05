@@ -4,9 +4,9 @@ authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
 description = """
-`multiunzip` from itertools but with support for larger than 12-tuples.
+Unzip iterators into tuples of arbitrary length, surpassing the limitations of `Iterator::unzip` and `itertools::multiunzip`.
 """
-keywords = ["unzip", "iterator", "itertools", "zip"]
+keywords = ["unzip", "iterator", "itertools", "zip", "tuple"]
 documentation = "https://docs.rs/many-unzip/"
 repository = "https://github.com/eopb/many-unzip"
 version = "0.1.1"
