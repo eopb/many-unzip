@@ -9,7 +9,7 @@ Unzip iterators into tuples of arbitrary length, surpassing the limitations of `
 keywords = ["unzip", "iterator", "itertools", "zip", "tuple"]
 documentation = "https://docs.rs/many-unzip/"
 repository = "https://github.com/eopb/many-unzip"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2018"
 exclude = [".github"]
 
